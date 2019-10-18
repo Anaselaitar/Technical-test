@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import Header from "./components/header/header";
 import MoviesList from "./components/moviesList/moviesList";
+import Footer from "./components/footer/footer";
 
 export default class App extends React.Component {
   moviesList = [];
@@ -37,6 +38,7 @@ export default class App extends React.Component {
         {!isLoading && !firstRun && moviesList.length === 0 && (
           <div className="Centered LargeText">No results</div>
         )}
+        <Footer />
       </div>
     );
   }
